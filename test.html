@@ -1,0 +1,30 @@
+
+<!--writing into html element: innerHTML-->
+<!--writing into html output: document.write()-->
+<!--writing into alert box: window.alert()-->
+<!--writing in to browser console: console.log()-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>First webpage</h1>
+<h2>a smaller font</h2>
+<p>My First Paragraph</p>
+
+<button type="button" onclick="document.write('deleted all html')">document.write</button>
+<button onclick = "print()"> printing this page</button>
+<p id = "新段落"></p>
+
+<!--script in body-->
+<script>
+  document.getElementById("新段落").innerHTML = "this paragraph is inserted with id";
+  document.write("this paragraph is inserted without html element");
+  alert('this is the alert');
+  console.log(555);
+</script>
+</body>
+</html>
